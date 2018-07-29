@@ -19,10 +19,15 @@ var getHtmlConfig = function(name, title){
 //webpack config
 var config = {
     entry: {
-        'common': ['./src/page/common/index.js'],
-        'index' : ['./src/page/index/index.js'],
-        'login' : ['./src/page/login/index.js'],
-        'result' : ['./src/page/result/index.js'],
+        'common'        : ['./src/page/common/index.js'],
+        'index'         : ['./src/page/index/index.js'],
+        'user-login'    : ['./src/page/user-login/index.js'],
+        'user-register' : ['./src/page/user-register/index.js'],
+        'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
+        'user-pass-update' : ['./src/page/user-pass-update/index.js'],
+        'user-center' : ['./src/page/user-center/index.js'],
+        'user-center-update' : ['./src/page/user-center-update/index.js'],
+        'result'        : ['./src/page/result/index.js'],
     },
     output: {
         path: './dist',
@@ -58,7 +63,12 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
         // html模版的处理
         new HtmlWebpackPlugin(getHtmlConfig('index', 'index')),
-        new HtmlWebpackPlugin(getHtmlConfig('login', 'login')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login', 'login')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-register', 'register')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', 'retrieve password')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'update password')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center', 'user center')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center-update', 'update personal info')),
         new HtmlWebpackPlugin(getHtmlConfig('result', 'result')),
 
     ]
