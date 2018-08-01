@@ -4,6 +4,7 @@ require('page/common/header/index.js');
 var nav             = require('page/common/nav/index.js');
 var _mm             = require('util/mm.js');
 var _cart           = require('service/cart-service.js');
+var _order           = require('service/order-service.js');
 var templateIndex   = require('./index.string');
 
 var page = {
@@ -122,7 +123,13 @@ var page = {
         $(document).on('click', '.btn-submit', function(){
             // 总价大于0，进行提交
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-                window.location.href = './confirm.html';
+                _order.createOrder({
+                    shippingId : 1
+                }, function(res){
+                    window.location.href = './payment.html?orderNumber=' + res.orderNo;
+                }, function(errMsg){
+                    _mm.errorTips(errMsg)
+                });
             }else{
                 _mm.errorTips('请选择商品后再提交');
             }
