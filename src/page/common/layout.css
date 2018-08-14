@@ -5,7 +5,7 @@
 }
 body{
     background: #f6f6f6;
-    font: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+    font: 12px/1.5 Helvetica, tahoma, arial, Microsoft YaHei, sans-serif;
 }
 li{
     list-style: none;
@@ -59,7 +59,7 @@ input[type='checkbox']{
     text-decoration: none;
 }
 .link:hover{
-    color: #e80012;
+    color: #208000;
 }
 .link-text{
     color: #999;

@@ -63,16 +63,16 @@ var page = {
             msg     : ''
         };
         if(!_mm.validate(formData.username, 'require')){
-            result.msg = '用户名不能为空';
+            result.msg = 'Username should not be empty';
             return result;
         }
         if(!_mm.validate(formData.password, 'require')){
-            result.msg = '密码不能为空';
+            result.msg = 'Password should not be empty';
             return result;
         }
         // 通过验证，返回正确提示
         result.status   = true;
-        result.msg      = '验证通过';
+        result.msg      = 'validation passed!';
         return result;
     }
 };

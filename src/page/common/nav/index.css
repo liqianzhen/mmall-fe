@@ -1,8 +1,18 @@
 .nav{
-    background: #eee;
-    height: 30px;
-    line-height: 30px;   
+    background: #fff;
+    height: 80px;
+    line-height: 80px;   
 }
+/*用户logo*/
+.nav .user.logo {
+    margin-right: 530px;
+    font-size: 40px;
+    font-family: Helvetica;
+    text-decoration: none;
+    color: #000000;
+}
+
+
 /* 用户部分 */
 .nav .user{
     float: left;
@@ -20,4 +30,17 @@
 .nav .nav-list .nav-item{
     display: inline-block;
     margin-left: 5px;
+}
+
+.link{
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover{
+    color: #e80012;
+}
+.link-text{
+    color: #999;
+    text-decoration: none;
 }

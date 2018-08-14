@@ -31,10 +31,22 @@
 /* 面包屑导航 */
 .crumb{
     margin-bottom: 15px;
-    height: 50px;
-    line-height: 50px;
-    background: #eee;
+    height: 90px;
+    line-height: 90px;
+    background-image: url(../../../image/Picture1.jpg);
+    background-size: cover;
     color: #888;
-    font-size: 14px;
-    border-top: 2px solid #c60023;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.5;
 }
+
+.crumb-con .link{
+    color: #000000;
+}
+
+.crumb-con .link-text{
+    color: #000000;
+}
+
+

@@ -1,0 +1,45 @@
+/* 列表 */
+.p-list-con{
+    margin-top: 15px;
+    margin-right: -20px;
+    overflow: hidden;
+}
+
+.p-list-con .p-category{
+    position: relative;
+    width: auto;
+    margin: 0 0 0 30px;
+    background: #fff;
+    font-size: 25px;
+    color: #008000;
+}
+
+.p-list-con .p-item{
+    position: relative;
+    width: auto;
+    margin: 0 0 0 30px;
+    background: #fff;
+    list-style-type: circle;
+}
+
+.p-list-con .p-item .p-name-con{
+    height: auto;
+    overflow: hidden;
+}
+.p-list-con .p-item .p-name-con .p-name{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: #666;
+    text-decoration: none;
+}
+/* 错误信息 */
+.err-tip{
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
+}

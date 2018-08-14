@@ -1,7 +1,8 @@
 /* 最外层容器 */
 .page-wrap{
     padding: 40px 0;
-    background: #e72955;
+    background: url(../../image/monika-grabkowska-510382-unsplash.jpg);
+    background-size: contain;
 }
 /* 表单框 */
 .user-con{

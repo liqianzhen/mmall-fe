@@ -1,10 +1,10 @@
 <table class="order-list-table header">
     <tr>
         <th class="cell cell-img">&nbsp;</th>
-        <th class="cell cell-info">商品信息</th>
-        <th class="cell cell-price">单价</th>
-        <th class="cell cell-count">数量</th>
-        <th class="cell cell-total">小计</th>
+        <th class="cell cell-info">Product Info</th>
+        <th class="cell cell-price">Unit</th>
+        <th class="cell cell-count">Quantity</th>
+        <th class="cell cell-total">Subtotal</th>
     </tr>
 </table>
 {{#list}}
@@ -12,17 +12,17 @@
     <tr>
         <td colspan="5" class="order-info">
             <span class="order-text">
-                <span>订单号：</span>
+                <span>Order No：</span>
                 <a class="link order-num" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">{{orderNo}}</a>
             </span>
             <span class="order-text">{{createTime}}</span>
-            <span class="order-text">收件人：{{receiverName}}</span>
-            <span class="order-text">订单状态：{{statusDesc}}</span>
+            
+            <span class="order-text">Status: {{statusDesc}}</span>
             <span class="order-text">
-                <span>订单总价：</span>
-                <span class="order-total">￥{{payment}}</span>
+                <span>Total：</span>
+                <span class="order-total">${{payment}}</span>
             </span>
-            <a class="link order-detail" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">查看详情></a>
+            <a class="link order-detail" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">Detail></a>
         </td>
     </tr>
     {{#orderItemVoList}}
@@ -35,13 +35,13 @@
         <td class="cell cell-info">
             <a class="link" href="./detail.html?productId={{productId}}" target="_blank">{{productName}}</a>
         </td>
-        <td class="cell cell-price">￥{{currentUnitPrice}}</td>
+        <td class="cell cell-price">${{currentUnitPrice}}</td>
         <td class="cell cell-count">{{quantity}}</td>
-        <td class="cell cell-total">￥{{totalPrice}}</td>
+        <td class="cell cell-total">${{totalPrice}}</td>
     </tr>
     {{/orderItemVoList}}
 </table>
 {{/list}}
 {{^list}}
-<p class="err-tip">您暂时还没有订单</p>
+<p class="err-tip">Go shopping</p>
 {{/list}}

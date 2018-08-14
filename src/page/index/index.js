@@ -8,3 +8,5 @@ var _mm = require('util/mm.js');
 navMain.init({
     name : 'sushi'
 });
+
+        

@@ -28,6 +28,17 @@
             <span class="p-count-btn plus">+</span>
             <span class="p-count-btn minus">-</span>
         </div>
+
+        <div class="p-info-item choice">
+            <div class="replacement">
+                
+            </div>
+        </div>
+
+        <div class="p-info-item note">
+            <span class="label">Note:</span>
+            <input class="p-note" name ="p-note" placeholder="E.g. less spicy"> 
+        </div>
         <div class="p-info-item">
             <a class="btn cart-add">Add to cart</a>
         </div>

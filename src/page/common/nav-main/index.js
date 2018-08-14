@@ -9,12 +9,12 @@ var navSide = {
         navList : [
             {name : 'favorites', desc : 'FAVORITES', href: './favorites.html'},
             {name : 'sushi', desc : 'SUSHI', href: './sushi.html'},
-            {name : 'chinese-cuisine', desc : 'CHINESE-CUISINE', href: './chinese-cuisine.html'},
-            {name : 'japenese-cuisine', desc : 'JAPENESE-CUISINE', href: './japenese-cuisine.html'},
-            {name : 'vietnamese-cuisine', desc : 'VIETNAMESE-CUISINE', href: './vietnamese-cuisine.html'},
+            {name : 'chinese-cuisine', desc : 'CHINESE', href: './chinese-cuisine.html'},
+            {name : 'japanese-cuisine', desc : 'JAPANESE', href: './japanese-cuisine.html'},
+            {name : 'vietnamese-cuisine', desc : 'VIETNAMESE', href: './vietnamese-cuisine.html'},
             {name : 'appetizer', desc : 'APPETIZER', href: './appetizer.html'},
             {name : 'lunch-special', desc : 'LUNCH SPECIAL', href: './lunch-special.html'},
-            {name : 'soup-salad-wine', desc : 'SOUP&SALAD&WINE', href: './soup-salad-wine.html'}
+            {name : 'soup-salad-drinks', desc : 'SOUP&SALAD&DRINKS', href: './soup&salad&drinks.html'}
         ]
     },
     init : function(option){

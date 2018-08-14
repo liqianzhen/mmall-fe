@@ -48,7 +48,7 @@ Pagination.prototype.getPaginationHtml = function(){
             ? option.pageNum + option.pageRange : option.pages;
     // 上一页按钮的数据
     pageArray.push({
-        name : '上一页',
+        name : 'Prev',
         value : this.option.prePage,
         disabled : !this.option.hasPreviousPage
     });
@@ -62,7 +62,7 @@ Pagination.prototype.getPaginationHtml = function(){
     };
     // 下一页按钮的数据
     pageArray.push({
-        name : '下一页',
+        name : 'Next',
         value : this.option.nextPage,
         disabled : !this.option.hasNextPage
     });
