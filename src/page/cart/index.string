@@ -41,7 +41,7 @@
                 </a>
             </td>
             <td class="cart-cell cell-info">
-                <a class="link" href="./detail.html?productId={{productId}}">{{productName}} {{choice}} Note: {{note}}</a>
+                <a class="link" href="./detail.html?productId={{productId}}">{{productName}}</a>
             </td>
             <td class="cart-cell cell-price">${{productPrice}}</td>
             <td class="cart-cell cell-count">
