@@ -10,6 +10,7 @@ var getHtmlConfig = function(name, title){
     return {
         template    : './src/view/' + name + '.html',
         filename    : 'view/' + name + '.html',
+        favicon     : './favicon.ico',
         title       : title,
         inject      : true,
         hash        : true,
@@ -44,9 +45,9 @@ var config = {
         'result'                : ['./src/page/result/index.js'],
     },
     output: {
-        path: './dist',
-        publicPath : '/dist',
-        filename: 'js/[name].js',
+        path        : __dirname + '/dist/',
+        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.ricegarden.com/mmall-fe/dist/',
+        filename    : 'js/[name].js'
     },
     externals : {
         'jquery' : 'window.jQuery'
@@ -55,7 +56,14 @@ var config = {
         loaders: [
             {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader")},
             {test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]' },
-            {test: /\.string$/, loader: 'html-loader'}
+            {   
+                test: /\.string$/, 
+                loader: 'html-loader',
+                query : {
+                    minimize : true,
+                    removeAttributeQuotes : false
+                }
+            }
         ]
     },
     resolve : {
