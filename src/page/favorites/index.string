@@ -1,0 +1,10 @@
+{{#list}}
+    <li class="p-item">
+        <div class="p-name-con">
+            <a class="p-name" href="./detail.html?productId={{id}}" target="_blank">{{name}} {{price}}</a>
+        </div>
+    </li>
+{{/list}}
+{{^list}}
+    <p class="err-tip">Sorry, I could not find your product..</p>
+{{/list}}

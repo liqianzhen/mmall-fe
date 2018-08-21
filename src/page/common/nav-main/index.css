@@ -1,0 +1,28 @@
+.nav-main{
+    text-align: center;
+    min-height: 40px;
+    background: #fff;
+}
+.nav-main .nav-item{
+    line-height: 25px;
+    font-size: 13px;
+    width:140px;
+    display:inline-block;
+    margin-top: 7px;
+}
+.nav-main .nav-item .link{
+    color: #888;
+}
+.nav-main .nav-item.active .link{
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.with-nav{
+    float: left;
+    width: 950px;
+}
+
+/*横线*/
+hr {
+    opacity: 0.2;
+}

@@ -1,0 +1,70 @@
+<div class="panel">
+    <div class="panel-title">Order Info</div>
+    <div class="panel-body">
+        <div class="order-info">
+            <div class="text-line">
+                <span class="text">Order Number: {{orderNo}}</span>
+                <span class="text">Create Time: {{createTime}}</span>
+            </div>
+            <div class="text-line">
+                <span class="text">Order Status: {{statusDesc}}</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel">
+    <div class="panel-title">Product List</div>
+    <div class="panel-body">
+        <table class="product-table">
+            <tr>
+                <th class="cell-th cell-img">&nbsp;</th>
+                <th class="cell-th cell-info">Product Info</th>
+                <th class="cell-th cell-price">Unit Price</th>
+                <th class="cell-th cell-count">Quantity</th>
+                <th class="cell-th cell-total">Subtotal</th>
+            </tr>
+            {{#orderItemVoList}}
+            <tr>
+                <td class="cell cell-img">
+                    <a href="./detail.html?productId={{productId}}" target="_blank">
+                        <img class="p-img" src="{{imageHost}}{{productImage}}" alt="{{productName}}" />
+                    </a>
+                </td>
+                <td class="cell cell-info">
+                    <a class="link" href="./detail.html?productId={{productId}}" target="_blank">{{productName}}</a>
+                </td>
+                <td class="cell cell-price">${{currentUnitPrice}}</td>
+                <td class="cell cell-count">{{quantity}}</td>
+                <td class="cell cell-total">${{totalPrice}}</td>
+            </tr>
+            {{/orderItemVoList}}
+        </table>
+        <p class="total">
+            <span>Subtotal：</span>
+            <span class="total-price">${{subTotal}}</span>
+        </p>
+        <p class="total">
+            <span>Tax：</span>
+            <span class="total-price">${{tax}}</span>
+        </p>
+        <p class="total">
+            <span>Total：</span>
+            <span class="total-price">${{payment}}</span>
+        </p>
+    </div>
+</div>
+<div class="panel">
+    <div class="panel-title">Pay when pick up</div>
+    <div class="panel-body">
+        <p>Pay with cash or credit card when pick up.</p>
+        <a class="btn pay-pick">place your order</a>
+    </div>
+ </div>
+
+<div class="panel">
+    <div class="panel-title">Pay via PayPal</div>
+    <div class="panel-body">
+        <p>You can pay with your credit card if you don’t have a PayPal account.</p>
+    </div>
+    <div id="paypal-button"></div>
+</div>
