@@ -46,7 +46,7 @@ var config = {
     },
     output: {
         path        : __dirname + '/dist/',
-        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.ricegarden.com/mmall-fe/dist/',
+        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.ricegardenbcs.com/mmall-fe/dist/',
         filename    : 'js/[name].js'
     },
     externals : {
