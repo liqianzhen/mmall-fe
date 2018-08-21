@@ -1,7 +1,7 @@
 
 {{#list}}
 <div>
-    <input type="radio" class="{{category}}" name="choices" value="{{value}}"  {{#check}} checked {{/check}}/>
+    <input type="radio" class="{{category}}" name="choices" value="{{value}}" />
     <label for="{{value}}">{{desc}}</label>
 </div>
 {{/list}}
