@@ -34,7 +34,8 @@ var page1 = {
         // 请求接口
         _product.getProductList(listParam, function(res){
             listHtml = _mm.renderHtml(templateIndex, {
-                list :  res.list
+                list            :  res.list,
+                categoryName    :  "FAVORITES"
             });
             $('.first-con .p-list-con').html(listHtml);
         }, function(errMsg){
