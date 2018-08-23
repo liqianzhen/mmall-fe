@@ -4,6 +4,16 @@
     margin-right: -20px;
     overflow: hidden;
 }
+
+.p-list-con .p-category{
+    position: relative;
+    width: auto;
+    margin: 0 0 0 30px;
+    background: #fff;
+    font-size: 25px;
+    color: #008000;
+}
+
 .p-list-con .p-item{
     position: relative;
     width: auto;
