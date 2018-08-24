@@ -182,7 +182,7 @@ COMMIT;
 BEGIN;
 INSERT INTO `mmall_product` VALUES ('96', '100008', 'Volcano Shrimp', 'Crispy Shrimp Tossed in RG Spicy Sauce', 'volcano-shrimp.jpeg', '', '', '12.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('97', '100008', 'Pecan Shrimp', 'Lightly battered in a Sweet and Tangy Honey Sauce with Roast', 'pecan-shrimp.jpeg', '', '', '12.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
-('98', '100008', 'Four Treasures', 'Chicken, Steak, Shrimp, Scallops in RGSpicy Sauce', 'four-treasures.jpeg', '', '', '12.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('98', '100008', 'Four Treasures', 'Chicken, Steak, Shrimp, Scallops in RG Spicy Sauce', 'four-treasures.jpeg', '', '', '12.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('99', '100008', 'Chinatown Stir Fry', 'Best Combination of Chicken, Beef, Shrimp, and Mixed Vegetable, with RG Brown Sauce', 'chinatown-stir-fry.jpeg', '', '', '12.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('100', '100008', 'Szechuan Beef & Scallop', 'Quick-Fried Tender Chicken with a Tart Citrus Sauce', 'szechuan-beef-&-scallop.jpeg', '', '', '12.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41');
 COMMIT;
