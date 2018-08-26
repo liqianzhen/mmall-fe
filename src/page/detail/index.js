@@ -144,7 +144,7 @@ var page = {
             var s3_l    = {category : 's3', value : 's3_l', desc : 'Large + 3.3'};
             var s3 = [s3_s, s3_m, s3_l];
 
-            if (res.categoryId === 100006 || res.categoryId === 100007 || res.categoryId === 100008 || res.categoryId === 100011 || res.categoryId === 100012 || res.categoryId === 100013 || res.categoryId === 100014 || res.categoryId === 100016 || res.categoryId === 100017 || res.categoryId === 100018 || res.categoryId === 100019) {
+            if (res.categoryId === 100006 || res.categoryId === 100007 || res.categoryId === 100008 || res.categoryId === 100011 || res.categoryId === 100012 || res.categoryId === 100013 || res.categoryId === 100014 || res.categoryId === 100016 || res.categoryId === 100017 || res.categoryId === 100018 || res.categoryId === 100019 || res.categoryId === 100033) {
                 var choiceHtml = _mm.renderHtml(templateChoice, {list : rice});
                 $choice.html(choiceHtml);
             } else if (res.categoryId === 100021) {

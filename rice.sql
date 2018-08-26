@@ -37,7 +37,9 @@ INSERT INTO `mmall_category` VALUES ('1', '0', 'Sushi', '1', null, '2017-03-25 1
 ('100029', '7', 'Miso Soup', '1', null, '2017-03-25 16:46:00', '2017-03-25 16:46:00'),
 ('100030', '7', 'Salad', '1', null, '2017-03-25 16:46:00', '2017-03-25 16:46:00'),
 ('100031', '7', 'Mochi Ice Cream', '1', null, '2017-03-25 16:46:00', '2017-03-25 16:46:00'),
-('100032', '7', 'Dessert', '1', null, '2017-03-25 16:46:00', '2017-03-25 16:46:00');
+('100032', '7', 'Dessert', '1', null, '2017-03-25 16:46:00', '2017-03-25 16:46:00'),
+('100033', '0', 'Favorite with rice', '1', null, '2017-03-25 16:46:00', '2017-03-25 16:46:00'),
+('100034', '0', 'Favorite', '1', null, '2017-03-25 16:46:00', '2017-03-25 16:46:00');
 COMMIT;
 ------------------------------------------------------------------------------------------------------------------------------------------
 --Sushi
@@ -171,7 +173,7 @@ COMMIT;
 
 -- Chicken Tender
 BEGIN;
-INSERT INTO `mmall_product` VALUES ('91', '100007', 'General Tso’s Chicken', 'Spicy', 'general-tso’s-chicken.jpeg', '', '', '9.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+INSERT INTO `mmall_product` VALUES ('91', '100007', 'General Tso Chicken', 'Spicy', 'general-tso’s-chicken.jpeg', '', '', '9.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('92', '100007', 'Orange Chicken', 'Spicy', 'orange-chicken.jpeg', '', '', '9.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('93', '100007', 'Sesame Chicken', '', 'sesame-chicken.jpeg', '', '', '9.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('94', '100007', 'Sweet & Sour Chicken', '', 'sweet-&-sour-chicken.jpeg', '', '', '9.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
@@ -283,7 +285,7 @@ COMMIT;
 
 --Lunch Chinese
 BEGIN;
-INSERT INTO `mmall_product` VALUES ('149', '100016', 'LC1 General Tso’s Chicken', 'Spicy', 'lc1-general-tso’s-chicken.jpeg', '', '', '6.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+INSERT INTO `mmall_product` VALUES ('149', '100016', 'LC1 General Tso Chicken', 'Spicy', 'lc1-general-tso’s-chicken.jpeg', '', '', '6.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('150', '100016', 'LC2 Orange Chicken', 'Spicy', 'lc1-orange-chicken.jpeg', '', '', '6.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('151', '100016', 'LC3 Sesame Chicken', '', 'lc1-sesame-chicken.jpeg', '', '', '6.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
 ('152', '100016', 'LC4 Sweet & Sour Chicken', '', 'lc1-sweet&sour-chicken.jpeg', '', '', '6.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41');
@@ -420,5 +422,26 @@ INSERT INTO `mmall_product` VALUES ('214', '100032', 'Tempura Vanilla Ice Cream'
 ('216', '100032', 'Tempura Cheese Cake', '', 'tempura-cheese-cake.jpeg', '', '', '5.00', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41');
 COMMIT;
 
+--favorte with rice
+BEGIN;
+INSERT INTO `mmall_product` VALUES ('217', '100033', 'General Tso Chicken', 'Spicy', 'general-tso’s-chicken.jpeg', '', '', '9.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('218', '100033', 'Volcano Shrimp', 'Crispy Shrimp Tossed in RG Spicy Sauce', 'volcano-shrimp.jpeg', '', '', '12.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('219', '100033', 'Chinatown Stir Fry', 'Best Combination of Chicken, Beef, Shrimp, and Mixed Vegetable, with RG Brown Sauce', 'chinatown-stir-fry.jpeg', '', '', '12.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('220', '100033', 'Orange Beef', 'Spicy', 'orange-beef.jpeg', '', '', '11.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('221', '100033', 'Sweet & Sour Chicken', '', 'sweet-&-sour-chicken.jpeg', '', '', '9.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('222', '100033', 'Volcano Chicken', 'Crispy Chicken Tossed in RG Spicy Sauce', 'volcano-chicken.jpeg', '', '', '11.99', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('223', '100033', 'Hibachi Platters-Chicken Breast(8oz)', 'Served with Miso Soup, House Salad, Hibachi Grilled Vegetables, and Rice; Ginger Dressing, Yummy Yummy Sauce on the side', 'hp-chicken-breast.jpeg', '', '', '13.00', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('224', '100033', 'Hibachi Platters-New York Strip(8oz)', 'Served with Miso Soup, House Salad, Hibachi Grilled Vegetables, and Rice; Ginger Dressing, Yummy Yummy Sauce on the side', 'hp-new-york-strip.jpeg', '', '', '15.00', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41');
+COMMIT;
 
+
+--favorite without rice
+BEGIN;
+INSERT INTO `mmall_product` VALUES ('225', '100034', 'Shaggy Dog', 'Soy Paper, Imitation Crab, Tempura Shrimp, Cream Cheese inside, and Topped with Crab Stick, Eel Sauce, Spicy Mayo', 'shaggy-dog.jpeg', '', '', '12.00', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('226', '100034', 'Bryan Roll', 'Imitation Crab, Tempura Shrimp inside, Topped with Eel, Avocado, Masago, Eel Sauce', 'bryan-roll.jpeg', '', '', '11.00', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('227', '100034', 'College Station', 'Imitation Crab, Avocado inside, Topped with Fresh Salmon', 'college-station.jpeg', '', '', '11.00', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('228', '100034', 'Love Boat', 'A&M Roll, Salmon, Tuna, Red Snapper, Yellow Tail Nigiri & Sashimi, 2 of each', 'love-boat.jpeg', '', '', '30.00', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('229', '100034', 'Cut Roll-California', '', 'cut-roll-california.jpeg', '', '', '5.00', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41'),
+('230', '100034', 'Hibachi Fried Rice', '', 'hibachi-fried-rice.jpeg', '', '', '7.5', '9999', '1', '2017-04-13 19:07:47', '2017-04-13 21:45:41');
+COMMIT;
 
