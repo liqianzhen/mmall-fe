@@ -54,10 +54,9 @@ var page = {
         _order.getOrderDetail(this.data.orderNumber, function(res){
             paypal.Button.render({
   // Configure environment
-  env: 'sandbox',
+  env: 'production',
   client: {
-    sandbox: 'ASqljPALtrH8bjsZrreAxqhzlixdUMzM3k2o2hTnlmsYmY0j8xbI8OPGEbCZjDmAjlzAI8jVKgvf-Bl5',
-    production: 'demo_production_client_id'
+    production: 'AZPBUJ6C804jogO8F2RclCqxFBKTbeSDUz026JQpzfsP4VxltxdJV8DUoOgdw9aeQOCNKMV26tzKQqKe'
   },
   // Customize button (optional)
   locale: 'en_US',
