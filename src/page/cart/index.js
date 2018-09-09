@@ -95,7 +95,7 @@ var page = {
         });
         // 删除单个商品
         $(document).on('click', '.cart-delete', function(){
-            if(window.confirm('确认要删除该商品？')){
+            if(window.confirm('Delete this item?')){
                 var productId = $(this).parents('.cart-table')
                     .data('product-id');
                 _this.deleteCartProduct(productId);
@@ -103,7 +103,7 @@ var page = {
         });
         // 删除选中商品
         $(document).on('click', '.delete-selected', function(){
-            if(window.confirm('确认要删除选中的商品？')){
+            if(window.confirm('Delete the selected item?')){
                 var arrProductIds = [],
                     $selectedItem = $('.cart-select:checked');
                 // 循环查找选中的productIds
@@ -115,7 +115,7 @@ var page = {
                     _this.deleteCartProduct(arrProductIds.join(','));
                 }
                 else{
-                    _mm.errorTips('您还没有选中要删除的商品');
+                    _mm.errorTips('choose one product to delete');
                 }  
             }
         });
@@ -131,7 +131,7 @@ var page = {
                     _mm.errorTips(errMsg)
                 });
             }else{
-                _mm.errorTips('请选择商品后再提交');
+                _mm.errorTips('select product before submitting');
             }
         });
     },
@@ -171,7 +171,7 @@ var page = {
     },
     // 显示错误信息
     showCartError: function(){
-        $('.page-wrap').html('<p class="err-tip">哪里不对了，刷新下试试吧。</p>');
+        $('.page-wrap').html('<p class="err-tip">Something goes wrong, try to refresh</p>');
     }
 };
 $(function(){
